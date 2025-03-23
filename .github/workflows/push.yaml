@@ -24,8 +24,8 @@ jobs:
           echo ::set-output name=epoch::$(date -u +%s)
         shell: bash
 
-      - uses: actions/checkout@main
-      - uses: sigstore/cosign-installer@main
+      - uses: actions/checkout@85e6279cec87321a52edac9c87bce653a07cf6c2 # main
+      - uses: sigstore/cosign-installer@d7d6bc7722e3daa8354c50bcb52f4837da5e9b6a # main
 
       - uses: chainguard-dev/actions/apko-build@main
         id: apko
